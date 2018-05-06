@@ -1,0 +1,12 @@
+/*
+ * Foundation & Motion UI
+ */
+
+// Settings
+@import 'abstracts/settings';
+
+// Load Foundation
+@import '~foundation-sites/scss/foundation';
+@import '~motion-ui/dist/motion-ui';
+
+@include foundation-everything(true, true);

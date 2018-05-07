@@ -8,5 +8,13 @@
   </div>
 </template>
 
-<script src="./script.js"></script>
+<script>
+export default {
+  name: 'ComponentVideoList',
+  props: [
+    'videos',
+  ],
+};
+</script>
+
 <style lang="scss" scoped src="./_scoped.scss"></style>

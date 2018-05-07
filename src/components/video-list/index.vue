@@ -1,7 +1,11 @@
 <template>
-  <ul class="c-VideoList l-YoutubeGrid-VideoListCell">
-    <li>Video List Item</li>
-  </ul>
+  <div class="c-VideoList l-YoutubeGrid-VideoListCell">
+    <ul
+      v-for="(video, index) in videos"
+      :key="index">
+      <li>{{ video.id.videoId }}</li>
+    </ul>
+  </div>
 </template>
 
 <script src="./script.js"></script>

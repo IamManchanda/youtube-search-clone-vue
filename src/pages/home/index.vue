@@ -3,8 +3,9 @@
     <ComponentSearchBar
       @searchTermChanged="onSearchTermChanged"
     />
-    <ComponentVideoList />
-    {{ videos.length }}
+    <ComponentVideoList
+      :videos="videos" 
+    />
   </div>
 </template>
 

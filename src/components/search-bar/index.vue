@@ -10,15 +10,5 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'ComponentSearchBar',
-  methods: {
-    onTextInput(event) {
-      this.$emit('searchTerm', event.target.value);
-    },
-  },
-};
-</script>
-
+<script src="./script.js"></script>
 <style lang="scss" scoped src="./_scoped.scss"></style>

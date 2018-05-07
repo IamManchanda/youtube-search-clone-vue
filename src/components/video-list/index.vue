@@ -3,10 +3,6 @@
     <li>Video List Item</li>
   </ul>
 </template>
-<script>
-export default {
-  name: 'ComponentVideoList',
-}
-</script>
 
+<script src="./script.js"></script>
 <style lang="scss" scoped src="./_scoped.scss"></style>

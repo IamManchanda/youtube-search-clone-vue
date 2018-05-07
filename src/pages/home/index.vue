@@ -4,6 +4,7 @@
       @searchTerm="onSearchTermChanged"
     />
     <ComponentVideoList />
+    {{ videos.length }}
   </div>
 </template>
 
@@ -20,6 +21,11 @@ export default {
     ComponentSearchBar,
     ComponentVideoList,
   },
+  data() {
+    return {
+      videos: [],
+    };
+  },
   methods: {
     onSearchTermChanged(searchTerm) {
       axios
@@ -32,7 +38,8 @@ export default {
           },
         })
         .then((response) => {
-          console.log(response);
+          this.videos = response.data.items;
+          console.log(this.videos);
         });
     },
   },

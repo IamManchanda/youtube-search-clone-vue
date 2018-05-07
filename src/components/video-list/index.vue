@@ -1,19 +1,24 @@
 <template>
-  <div class="c-VideoList l-YoutubeGrid-VideoListCell">
-    <ul
+  <ul class="c-VideoList l-YoutubeGrid-VideoListCell">
+    <ComponentVideoListItem 
       v-for="(video, index) in videos"
-      :key="index">
-      <li>{{ video.id.videoId }}</li>
-    </ul>
-  </div>
+      :key="index"
+      :video="video"
+    />
+  </ul>
 </template>
 
 <script>
+import ComponentVideoListItem from '@/components/video-list-item/index.vue';
+
 export default {
   name: 'ComponentVideoList',
-  props: [
-    'videos',
-  ],
+  props: {
+    videos: Array,
+  },
+  components: {
+    ComponentVideoListItem,
+  },
 };
 </script>
 

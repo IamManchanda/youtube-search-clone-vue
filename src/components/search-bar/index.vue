@@ -1,5 +1,5 @@
 <template>
-  <div class="app-SearchBar">
+  <div class="c-SearchBar">
     <label class="isLargeLabel">Youtube Search
       <input 
         type="text"
@@ -12,10 +12,10 @@
 
 <script>
 export default {
-  name: 'AppSearchBar',
+  name: 'ComponentSearchBar',
   methods: {
     onTextInput(event) {
-      this.$emit('searchTermChanged', event.target.value);
+      this.$emit('searchTerm', event.target.value);
     },
   },
 };

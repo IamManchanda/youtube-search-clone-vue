@@ -1,18 +1,18 @@
 <template>
-  <div class="page-Home hasBackground">
-    <AppHello 
-      msg="Welcome to Your Vue.js App"
+  <div class="page-Home">
+    <AppSearchBar
+      :textInput="textInput"
     />
   </div>
 </template>
 
 <script>
-import AppHello from '@/components/hello/AppHello.vue';
+import AppSearchBar from '@/components/search-bar/AppSearchBar.vue';
 
 export default {
   name: 'PageHome',
   components: {
-    AppHello,
+    AppSearchBar,
   },
 };
 </script>

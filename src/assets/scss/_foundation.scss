@@ -1,5 +1,5 @@
 /*
- * Foundation & Motion UI
+ * Foundation
  */
 
 // Settings
@@ -7,6 +7,5 @@
 
 // Load Foundation
 @import '~foundation-sites/scss/foundation';
-@import '~motion-ui/dist/motion-ui';
 
 @include foundation-everything(true, true);

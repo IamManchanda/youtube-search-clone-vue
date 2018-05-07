@@ -2,7 +2,8 @@ export default {
   name: 'ComponentSearchBar',
   methods: {
     onTextInput(event) {
-      this.$emit('searchTerm', event.target.value);
+      const searchTerm = event.target.value;
+      this.$emit('searchTermChanged', searchTerm);
     },
   },
 };

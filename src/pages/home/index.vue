@@ -1,7 +1,7 @@
 <template>
   <div class="p-Home l-YoutubeGrid">
     <ComponentSearchBar
-      @searchTerm="onSearchTermChanged"
+      @searchTermChanged="onSearchTermChanged"
     />
     <ComponentVideoList />
     {{ videos.length }}

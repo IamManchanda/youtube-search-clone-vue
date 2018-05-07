@@ -1,9 +1,9 @@
 <template>
   <div class="p-Home l-YoutubeGrid">
-    <ComponentSearchBar
+    <component-search-bar
       @searchTermChanged="onSearchTermChanged"
     />
-    <ComponentVideoList
+    <component-video-list
       :videos="videos" 
     />
   </div>

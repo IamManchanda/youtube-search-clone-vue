@@ -1,6 +1,6 @@
 <template>
   <ul class="c-VideoList l-YoutubeGrid-VideoListCell">
-    <ComponentVideoListItem 
+    <component-video-list-item 
       v-for="(video, index) in videos"
       :key="index"
       :video="video"

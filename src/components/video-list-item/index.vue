@@ -1,6 +1,6 @@
 <template>
   <li class="c-VideoList-Item">
-    {{ video.id.videoId }}
+    {{ video.snippet.title }}
   </li>
 </template>
 

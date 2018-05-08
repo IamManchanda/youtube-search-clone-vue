@@ -11,4 +11,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped src="./_scoped.scss"></style>
+<!-- <style lang="scss" scoped src="./_scoped.scss"></style> -->

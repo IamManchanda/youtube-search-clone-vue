@@ -6,6 +6,7 @@
       v-for="currentVideo in videos"
       :key="currentVideo.etag"
       :video="currentVideo"
+      @videoSelected="videoSelected"
     />
   </ul>
 </template>
@@ -21,7 +22,12 @@ export default {
   components: {
     ComponentVideoListItem,
   },
+  methods: {
+     videoSelected(video) {
+      this.$emit('videoSelected', video);
+    },
+  },
 };
 </script>
 
-<style lang="scss" scoped src="./_scoped.scss"></style>
+<!-- <style lang="scss" scoped src="./_scoped.scss"></style> -->

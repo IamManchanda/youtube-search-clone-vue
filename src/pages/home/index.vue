@@ -4,8 +4,12 @@
     <component-search-bar
       @searchTermChanged="onSearchTermChanged"
     />
+    <div class="cell medium-7 large-9">
+      {{ selectedVideo }}
+    </div>
     <component-video-list
-      :videos="videos" 
+      :videos="videos"
+      @videoSelected="onVideoSelected"
     />
   </div>
 </template>
@@ -28,6 +32,7 @@ export default {
   data() {
     return {
       videos: [],
+      selectedVideo: {},
     };
   },
   methods: {
@@ -45,8 +50,11 @@ export default {
           this.videos = response.data.items;
         });
     },
+    onVideoSelected(video) {
+      this.selectedVideo = video;
+    },
   },
 };
 </script>
 
-<style lang="scss" scoped src="./_scoped.scss"></style>
+<!-- <style lang="scss" scoped src="./_scoped.scss"></style> -->

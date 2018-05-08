@@ -11,7 +11,7 @@
 
 <script>
 import axios from 'axios';
-import ComponentSearchBar from '@/components/search-container/search-bar/index.vue';
+import ComponentSearchBar from '@/components/header-container/search-bar/index.vue';
 import ComponentVideoList from '@/components/video-container/video-list/index.vue';
 
 const API_KEY = 'AIzaSyD9omTtDRMzJBjQYCviCaTmd3zlKNWwI3Q'; // Add your API Key here!

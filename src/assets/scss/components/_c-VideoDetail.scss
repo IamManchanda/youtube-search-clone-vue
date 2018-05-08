@@ -1,0 +1,12 @@
+.c-VideoDetail {}
+
+.c-VideoDetail-Video {
+  @include responsive-embed(16 by 9);
+}
+
+.c-VideoDetail-Content {
+  margin-top: $global-margin * 2.5;
+  margin-bottom: $global-margin * 2.5;
+  padding: $global-padding;
+  border: 2px dashed $secondary-color;
+}

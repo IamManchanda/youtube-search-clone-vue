@@ -1,5 +1,5 @@
 <template>
-  <div class="c-SearchBar l-YoutubeGrid-SearchCell cell medium-10 large-11">
+  <div class="c-SearchBar l-YoutubeGrid-SearchCell">
     <input 
       type="text"
       placeholder="Search for Youtube Videos"

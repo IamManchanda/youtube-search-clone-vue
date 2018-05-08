@@ -1,1 +1,7 @@
-.o-MediaObject {}
+.o-MediaObject {
+  @include media-object-container;
+}
+
+.o-MediaObject-Section {
+  @include media-object-section();
+}

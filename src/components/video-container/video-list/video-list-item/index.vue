@@ -2,16 +2,16 @@
   <li 
     class="c-VideoList-Item" 
     @click="videoItemClicked">
-    <div class="media-object o-MediaObject">
-      <div class="media-object-section o-MediaObject-Section">
-        <img :src="videoThumbnail" class="thumbnail o-MediaObject-Thumbnail">
+    <div class="o-MediaObject">
+      <div class="o-MediaObject-Section">
+        <img :src="videoThumbnail" class="thumbnail o-Thumbnail">
       </div>
-      <div class="media-object-section o-MediaObject-Section">
+      <div class="o-MediaObject-Section">
         <h6>{{ videoTitle }}</h6>
+        <h6><strong>Channel:</strong> {{ videoChannel }}</h6>
       </div>
     </div>
-    <div class="o-MediaContent hide-for-small-only">
-      <h6><strong>Channel:</strong> {{ videoChannel }}</h6>
+    <div class="o-MediaContent">
       <p>{{ videoDescription }}</p>
     </div>
   </li>

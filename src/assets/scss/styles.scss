@@ -11,6 +11,7 @@
 // Components
 @import 'components/c-SearchBar';
 @import 'components/c-SiteLogo';
+@import 'components/c-VideoDetail';
 @import 'components/c-VideoList';
 
 // Layouts
@@ -19,6 +20,7 @@
 // Objects
 @import 'objects/o-MediaContent';
 @import 'objects/o-MediaObject';
+@import 'objects/o-Thumbnail';
 
 // Pages
 @import 'pages/p-Home';

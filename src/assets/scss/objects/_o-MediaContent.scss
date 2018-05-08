@@ -1,1 +1,4 @@
-.o-MediaContent {}
+.o-MediaContent {
+  @include hide-for-only(small);
+  @include hide-for-only(medium);
+}

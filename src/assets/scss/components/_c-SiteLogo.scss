@@ -1,5 +1,12 @@
 .c-SiteLogo {}
 
-.c-SiteLogo-ImageView {}
+.c-SiteLogo-ImageView {
+  @include hide-for-only(small);
+}
 
-.c-SiteLogo-TextView {}
+.c-SiteLogo-TextView {
+  @include show-for-only(small);
+  text-align: center;
+  color: $black;
+  margin-bottom: $global-margin;
+}

@@ -1,4 +1,4 @@
-$list-group-height: 78vH;
+$list-group-height: 85vH;
 $list-group-background: $white;
 $list-group-hover-background: $light-gray;
 $list-group-font-color: $body-font-color;
@@ -10,7 +10,6 @@ $list-group-shadow: none;
 
 .c-VideoList {
   height: $list-group-height;
-  margin-top: $list-group-margin;
   margin-bottom: $list-group-margin;
   border: $list-group-border;
   border-radius: $list-group-border-radius;

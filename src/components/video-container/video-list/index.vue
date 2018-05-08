@@ -1,6 +1,6 @@
 <template>
   <ul 
-    class="c-VideoList l-YoutubeGrid-VideoListCell cell medium-5 large-3"
+    class="c-VideoList l-YoutubeGrid-VideoListCell"
     v-if="videos && videos.length > 0">
     <component-video-list-item 
       v-for="currentVideo in videos"

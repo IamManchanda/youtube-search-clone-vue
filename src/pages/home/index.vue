@@ -1,5 +1,6 @@
 <template>
-  <div class="p-Home l-YoutubeGrid">
+  <div class="p-Home l-YoutubeGrid grid-x grid-margin-x">
+    <component-site-logo />
     <component-search-bar
       @searchTermChanged="onSearchTermChanged"
     />
@@ -11,6 +12,7 @@
 
 <script>
 import axios from 'axios';
+import ComponentSiteLogo from '@/components/header-container/site-logo/index.vue'
 import ComponentSearchBar from '@/components/header-container/search-bar/index.vue';
 import ComponentVideoList from '@/components/video-container/video-list/index.vue';
 
@@ -21,6 +23,7 @@ export default {
   components: {
     ComponentSearchBar,
     ComponentVideoList,
+    ComponentSiteLogo,
   },
   data() {
     return {

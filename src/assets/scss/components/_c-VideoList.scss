@@ -1,1 +1,33 @@
-.c-VideoList {}
+$list-group-background: $white;
+$list-group-font-color: $body-font-color;
+$list-group-shadow: none;
+$list-group-border: 2px solid $light-gray;
+$list-group-border-radius: $global-radius;
+$list-group-padding: $global-padding;
+$list-group-margin: $global-margin;
+
+.c-VideoList {
+  margin-top: $list-group-margin;
+  margin-bottom: $list-group-margin;
+  border: $list-group-border;
+  border-radius: $list-group-border-radius;
+  background: $list-group-background;
+  box-shadow: $list-group-shadow;
+  overflow: hidden;
+  color: $list-group-font-color;
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.c-VideoList-Item {
+  padding: $list-group-padding;
+  border-bottom: $list-group-border;
+
+  & > :last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+}
+

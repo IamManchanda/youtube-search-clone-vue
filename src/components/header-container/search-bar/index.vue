@@ -1,12 +1,10 @@
 <template>
-  <div class="c-SearchBar l-YoutubeGrid-SearchCell">
-    <label class="isLargeLabel">Youtube Search
-      <input 
-        type="text"
-        placeholder="Search for Youtube Videos"
-        @input="onTextInput"
-      />
-    </label>
+  <div class="c-SearchBar l-YoutubeGrid-SearchCell cell medium-10 large-11">
+    <input 
+      type="text"
+      placeholder="Search for Youtube Videos"
+      @input="onTextInput"
+    />
   </div>
 </template>
 

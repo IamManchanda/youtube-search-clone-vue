@@ -1,4 +1,6 @@
-.c-SiteLogo {}
+.c-SiteLogo {
+  margin-bottom: $global-margin;
+}
 
 .c-SiteLogo-ImageView {
   @include hide-for-only(small);
